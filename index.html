@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Son of Every Cloud</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="titlebar">
+        <h1>The Son of Every Cloud</h1>
+        <p>
+          A one-shot atmospheric point-and-click tale about hats, apples, and
+          the things we never say out loud.
+        </p>
+      </header>
+
+      <section id="scene" class="scene" aria-live="polite">
+        <div id="sky" class="sky"></div>
+        <div id="scene-art" class="scene-art"></div>
+        <div id="hotspots" class="hotspots"></div>
+      </section>
+
+      <section class="ui-row">
+        <article class="panel">
+          <h2>What you notice</h2>
+          <p id="description" class="description"></p>
+        </article>
+
+        <article class="panel">
+          <h2>Inventory</h2>
+          <ul id="inventory" class="inventory"></ul>
+        </article>
+      </section>
+
+      <section class="actions">
+        <button id="restart" type="button">Start Over</button>
+      </section>
+    </main>
+
+    <template id="hotspot-template">
+      <button class="hotspot" type="button"></button>
+    </template>
+
+    <script src="game.js"></script>
+  </body>
+</html>
